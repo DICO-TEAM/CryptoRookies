@@ -21,7 +21,7 @@ recs.each_with_index do |rec,i|
   name = "angel#{i+1}"
   angel = art.generate( rec )
   angel.save( "./o/angel/#{name}.png" )
-  # angel.zoom(20).save( "./o/angel/#{name}x20.png" )
+  angel.zoom(20).save( "./o/angel-20/#{name}.png" )
   angels << angel
 end
 

@@ -26,7 +26,7 @@ class Art
     attributes.each do |type,key|
        next if key.nil? || key.empty?  ## note: skip nil or empty string attributes
 
-       basename =  key.downcase.gsub( ' ', '' )
+       basename =  key #.downcase.gsub( ' ', '' )
        path = "#{@dir}/#{basename}.png"
        puts "  reading >#{path}<..."
 

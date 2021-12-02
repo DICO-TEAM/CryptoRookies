@@ -18,10 +18,10 @@ art = Art.new( dir: './EliteElements' )
 elites = CompositeImage.new( 10, 10 )
 
 recs.each_with_index do |rec,i|
-  name = "angel#{i+1}"
+  name = "elite#{i+1}"
   elite = art.generate( rec )
   elite.save( "./o/elite/#{name}.png" )
-  # angel.zoom(20).save( "./o/angel/#{name}x20.png" )
+  elite.zoom(20).save( "./o/elite-20/#{name}.png" )
   elites << elite
 end
 
